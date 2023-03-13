@@ -1,0 +1,684 @@
+:root{
+    --colorInput:rgb(41, 41, 41);
+    --headerColor:rgb(5, 5, 5);
+    --buttonColor:rgb(17, 111, 194);
+    --buttonHover:rgb(15, 63, 105);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+/* HEADER */
+header{
+    top: 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100px;
+    background-color: rgb(5, 5, 5);
+    width: 100%;  
+    color: rgb(243, 243, 243);
+    border-bottom: 1px solid rgb(48, 48, 48);
+}
+header img{
+    width: 65px;
+    margin-left: 6.5em;
+}
+header input{
+    width: 200px;
+    height: 45px;
+    padding: 15px;
+    background-color: var(--colorInput);
+    border: 1px solid var(--colorInput);
+    color: rgb(245, 245, 245);
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+    transition: all .2s ease;
+    z-index: 10;
+}
+header input::placeholder{
+    color: rgb(183, 183, 183);
+}
+header input:focus{
+    content: 'Resultados da sua busca / Codigo Online do configurador';
+    width: 600px;
+    border-bottom:2px solid rgb(0, 166, 255);
+}
+
+header input{
+    outline: none;
+}
+
+#empresa{
+    font-size: .7em;
+    color: rgb(171, 171, 171);
+    margin-right: 42.5em;
+    cursor: pointer;
+    position: absolute;
+    z-index: 3;
+}
+#logo{
+    margin-right: auto;
+    margin-top: 3em;
+    margin-left: 3em;
+    cursor: pointer;
+}
+#user{
+    margin-right: 8em;
+    width: 45px;
+    height: 45px;
+    color: var(--headerColor);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#user:hover{
+    background-color: var(--colorInput);
+    padding: 15px;
+    cursor: pointer;
+    
+}
+#search{
+    width: 45px;
+    height: 45px;
+    background-color: var(--colorInput);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    margin-right: 2em;
+    cursor: pointer;
+    border: 2px solid var(--colorInput);
+    color: grey;
+}
+#search::before{
+    position: absolute;
+    content: "|";
+    margin-right: 2.5em;
+    color: rgb(91, 91, 91);
+}
+
+/* SECTION1 */
+.subsobre {
+    width: 100%;
+    background-color: var(--headerColor);
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.subsobre ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    color: rgb(211, 211, 211);
+    margin-left: 6em;
+}
+.subsobre ul li{
+    margin-left: 1.5em;
+}
+.carro{
+    margin-right: 1em;
+}
+.subsobre ul li:hover{
+    cursor: pointer;
+    color: white;
+}
+
+/*section1 */
+/* menu section1 */
+#visao{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.258);
+
+
+}
+#visao span{
+    background-color: rgb(232, 232, 232);
+    margin-left: 7em;
+    font-size: .9em;
+    padding: 10px;
+    border-radius: 2px;
+}
+.nav{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    width: 100%;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    display: none;
+    z-index: 10;
+}
+.nav h1{
+    font-size: 1em;
+    cursor: pointer;
+}
+.nav .menu{
+    margin-left: -10em;
+    margin-right: 3em;
+    cursor: pointer;
+}
+.nav button{
+    width: 150px;
+    height: 40px;
+    
+}
+.nav .configurar{
+    border: 1px solid rgb(167, 167, 167);
+    background-color: transparent;
+    font-weight: bold;
+    margin-left: 50em;
+    transition: all .5s;
+    cursor: pointer;
+
+}
+.nav .configurar:hover{
+    background-color: rgb(214, 214, 214);
+}
+.nav .showrrom:hover{
+    cursor: pointer;
+    background-color: var(--buttonHover);
+
+}
+.nav .showrrom{
+    margin-left: 1em;
+    border: 1px solid var(--buttonColor);
+    background-color: var(--buttonColor);
+}
+.newNav{
+    display: flex;
+}
+.fixoNoTopo{
+    position:fixed;
+    top: 0px;
+}
+.newvision{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    z-index: 10;
+    position: absolute;
+    border-top: 1px solid gray;
+    margin-top: -8em;
+    box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.258);
+    transition: all .5s;
+
+}
+.newvision span{
+    background-color: rgb(232, 232, 232);
+    margin-left: 7em;
+    font-size: .9em;
+    padding: 10px;
+    border-radius: 2px;
+}
+.active{
+    margin-top: 6.8em;
+}
+.close{
+    position: absolute;
+    margin-left: 5em;
+    cursor: pointer;
+}
+
+
+.container{
+    width: 100%;
+    height: calc(100vh - 50px);
+    background:linear-gradient(0deg,black,transparent 50%),linear-gradient(90deg,black,transparent 50%),url(./assets/A-Class-Saloon_V177_Stage_Overview_2730x1213.avif);
+    background-size: cover ;
+}
+.container .image{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+.container .carInfo{
+    position: absolute;
+    margin-left: 7%;
+    color: white;
+    margin-top: 12%;
+}
+.container .carInfo h1{
+    font-size: 2.5em;
+}
+.container .carInfo p{
+    margin-top: 7%;
+}
+.container .carInfo p span{
+    font-weight: bold;
+}
+.info{
+    margin-left: 3%;
+    cursor: pointer;
+}
+.container button{
+    padding: 15px 20px;
+    cursor: pointer;
+    margin-top: 10%;
+    width: 200px;
+}
+.showrrom{
+    background: transparent;
+    color: white;
+    font-weight: bolder;
+    border: 2px solid  rgb(91, 91, 91);
+    transition: all .5s;
+}
+.showrrom:hover{
+    background-color: rgba(128, 128, 128, 0.633);
+}
+.config{
+    color: white;
+    background-color: var(--buttonColor);
+    border: 2px solid rgb(0, 166, 255);
+    transition: all .5s;
+    font-weight: bolder;
+}
+.config:hover{
+    background-color: rgb(13, 79, 114);
+
+}
+
+/* section2 */
+#section2{
+    width: 100%;
+}
+.section2info{
+    margin-left: 7%;
+    margin-top: 5%;
+}
+.section2info span{
+    color: grey;
+    font-size: 0.8em;
+}
+.section2info h1{
+    font-size: 2em;
+    margin-top: 2%;
+}
+.section2info button{
+    margin-top: 2%;
+    padding: 15px 25px;
+    color: white;
+    background-color:var(--buttonColor) ;
+    border: none;
+    font-weight: bold;
+    transition: all .5s;
+}
+.section2info button:hover{
+    background-color: var(--buttonHover);
+    cursor: pointer;
+}
+
+#section2 ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-left: 7%;
+    margin-top: 4%;
+    font-weight: bold;
+    color: rgb(110, 110, 110);
+}
+#section2 ul li{
+    cursor: pointer;
+    min-width: 200px;
+    height: 50px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s;
+    font-size: .9em;
+}
+#section2 ul li:hover{
+    background-color: rgba(210, 210, 210, 0.385);
+}
+
+.piccontainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+    border-top: 1px solid rgb(198, 198, 198);
+}
+.pic{
+    width: 85%;
+    height: 90vh;
+    background:url(./assets/car2.png);
+    overflow:auto;
+    background-size: cover;
+    z-index: 3;
+}
+
+/* cards */
+.cards{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+}
+.cards .card{
+    width: 300px;
+    height: 130px;
+    border: 1px solid gray;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+    transition: all .5s;
+    
+}
+.cards .card h1{
+    font-size: 0.9em;
+    margin-bottom: .7em;
+    transition: all .1s;
+}
+.cards .card p{
+    font-size: .8em;
+}
+.cards .card .carro{
+    margin-bottom: 2em;
+    transition: all 0.5s;
+}
+.cards .card .arrow{
+    opacity: 0;
+    margin-left: .5em;
+    transform: translateX(-30px);
+    transition: all .5s;
+    color: var(--buttonColor);
+}
+.cardIcon{
+    transition: all .5s ;
+}
+.cardText{
+    transition: all .5s ease;
+}
+.cards .card:hover{
+    background-color: rgba(230, 229, 228, 0.374);
+    cursor: pointer;
+}
+.cards .card:hover .carro{
+    opacity: 0;
+}
+.cards .card:hover .arrow{
+    opacity: 1;
+    transform: translateX(0px);
+}
+.cards .card:hover .cardText{
+    transform: translateX(-10px);
+}
+
+
+
+
+
+
+.etiqueta{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.etiqueta span{
+    margin-left: 7%;
+    color: rgb(82, 82, 82);
+    font-size: 0.9em;
+}
+.etiqueta button{
+    margin-top: 3%;
+    margin-left: 7%;
+    width: 350px;
+    height: 50px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    background-color: var(--buttonColor);
+}
+
+
+/* footer */
+footer{
+    width: 100%;
+    height: 85vh;
+    background-color: var(--headerColor);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.textFooter{
+    display: flex;
+    width: 100%;
+    font-size: .9em; 
+    height: 300px;
+    cursor: pointer;   
+}
+.servicos{
+    margin-left: 7em;
+    width: 200px;
+    color: rgb(176, 176, 176);
+}
+
+.servicos ul li{
+    list-style: none;
+    margin-bottom: 1.5em;
+
+}
+.sobreFooter{
+    width: 200px;
+    margin-left: 1em;
+    color: rgb(176, 176, 176);
+}
+
+.sobreFooter ul li{
+    list-style: none;
+    margin-bottom: 1.5em;
+    
+}
+.infoFooter{
+    width: 90%;
+    height: 50px;
+    border-top: 1px solid gray;
+    margin-bottom: -10em;
+    padding-top: 2em;
+    
+}
+.servicosonline{
+    color: aliceblue;
+    font-weight: bold;
+    cursor: auto;
+    margin-bottom: 2em;
+}
+.sobre{
+    color: aliceblue;
+    font-weight: bold;
+    cursor: auto;
+}
+.infoFooter ul{
+    display: flex;
+    list-style: none;
+    color: rgb(176, 176, 176);
+    margin-right:5em;
+}
+.infoFooter ul li{
+    cursor: pointer;
+    margin: 1em;
+    font-size: .8em;
+}
+.fa-facebook{
+    margin-left: 10em;
+}
+.cima{
+    position: absolute;
+    margin-bottom: 30em;
+    width: 100px;
+}
+.cima a{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+footer li:hover{
+    text-decoration: underline;
+}
+
+.menuHeader{
+    display: none;
+}
+.responsivo{
+    display: none;
+}
+.notificacao{
+    color: rgb(158, 158, 158);
+    margin-top: 5em;
+}
+/* medias queries */
+@media (max-width:780px) {
+ 
+    #search{
+        display: none;
+    }
+    #procura{
+        display: none;
+    }
+    header{
+        width: 100%;
+        height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .subsobre{
+        display: none;
+    }
+    header #logo{
+        display: none;
+    }
+    header img{
+        width: 40px;
+        margin-left: 15em;
+    }
+   header #user{
+    margin-left: 7em;
+   }
+   header .menuHeader{
+    display: inline-block;
+   }
+
+   .cards{
+    margin-top: 8em;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+   }
+   .cards .card{
+    height: 70px;
+    width: 350px;
+    display: flex;
+    justify-content: start;
+   }
+   .cards .card h1{
+    margin-bottom: 0;
+   }
+  
+
+   footer .textFooter ul li{
+    display: none;
+   }
+
+
+  footer span{
+    color: rgb(168, 168, 168);
+    font-size: .8em;
+  }
+
+  .container{
+    height: 80vh;
+    background: black;
+  }
+  .container .carInfo{
+    position: absolute;
+    margin-left: 7%;
+    color: white;
+    margin-top: 82%;
+    font-size: .8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.container button{
+    width: 300px;
+}
+.container .config{
+    margin-top: 1em;
+}
+.car{
+    z-index: -1;
+    width: 400px;
+    height: 300px;
+    background:linear-gradient(0deg,black,transparent 50%),linear-gradient(90deg,black,transparent 50%),url(./assets/A-Class-Saloon_V177_Stage_Overview_2730x1213.avif);
+    position: absolute;
+    background-size: cover;
+    margin-top: -50em;
+}
+.section2info{
+    margin-top: 7em;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    margin-left: 1em;
+}
+.section2info button{
+    width: 350px;
+}
+.responsivo{
+    display: inline-block;
+    position: absolute;
+    margin-right: 10em;
+    font-size: .9em;
+}
+.shop{
+    position: absolute;
+    color: white;
+    margin-left: 18em;
+    margin-top: -2em;
+    background-color: var(--buttonColor);
+    padding: 10px;
+}
+.shop:hover{
+    background-color: var(--buttonHover);
+}
+
+
+}

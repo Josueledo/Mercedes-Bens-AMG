@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classe A Sedan | Mercedes-Benz</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/ea86b4540c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/mercedez.png">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <i  class="fa-solid fa-bars menuHeader"></i>
+        <img src="./assets/mercedez.png" alt="">
+        <p id="logo">Mercedes-Benz</p>
+        <p id="empresa">© 2023. Mercedes-Benz & Vans Brasil</p>
+        <input id="procura" type="text" placeholder="Resultados da sua busca / Código Online do configurador">
+        <span id="search"><i class="fa-solid fa-magnifying-glass fa-sm"></i></span>
+        <span id="user"><i  class="fa-solid fa-user"></i></span>
+    </header>
+    <!--Segunda parte do header  -->
+    <div class="subsobre">
+        <ul>
+            <li><i class="fa-solid fa-car carro"></i>Nossos modelos</li>
+            <li>Showroom Online</li>
+            <li>Guia de Compra</li>
+            <li>Peças e Serviços</li>
+            <li>Nossa Marca</li>
+        </ul>
+    </div>
+    <!-- section 1 -->
+    <div id="visao">
+        <span>Visão geral</span>
+        <div class="nav">
+            <div class="responsivo">
+                <h1>Classe A Sedan</h1>
+                <p >Visão geral</p>
+                <i class="fa-solid fa-cart-shopping  shop"></i>
+            </div>
+            <i onclick="newnav()" class="fa-solid fa-bars menu"></i>
+            <h1>Classe A Sedan</h1>
+            <button class="configurar">Configurar agora</button>
+            <button class="showrrom">Showrrom Online</button>
+            <div class="newvision">
+                <span>Visão geral</span>
+            </div>
+        </div>
+    </div>
+    <section>
+        <!-- VISAO GERAL -->
+        <!-- <div class="visao">
+            <span>Visão geral</span>
+        </div> -->
+        <!-- container section1 -->
+        <div class="container">
+            <div class="carInfo">
+                <div class="car"></div>
+                <h1>Mercedes-AMG A 35<br>4MATIC Sedan</h1>
+                <p>Versões a partir de <span>R$ 465.900,00</span><i class="fa-solid fa-circle-info info"></i></p>
+                <button class="showrrom">Showroom Online</button>
+                <button class="config">Configurar agora</button>
+            </div>
+        </div>
+    </section>
+    <!-- section2 -->
+    <section id="section2">
+        <div class="section2info">
+            <span class="mercedes">Mercedes-AMG</span>
+            <h1>Mercedes-AMG A 35 4MATIC Sedan.</h1>
+            <button>Configurar agora</button>
+        </div>
+        <ul>
+            <li>Destaques do exterior</li>
+            <li>Destaques do interior</li>
+            <li>Perfomance</li>
+            <li>Equipamentos AMG</li>
+            <li>Mercedes-AMG World</li>
+        </ul>
+        <div class="piccontainer">
+            <div class="pic"></div>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <div class="cardIcon">
+                    <i class="fa-solid fa-car  carro"></i>
+                </div>
+                <div class="cardText">
+                    <h1>Configurar agora</h1>
+                    <p>Configure o seu mercedes-AMG<br>A 35 4MATIC Sedan</p>
+                </div>
+                <div class="CardIcon">
+                    <i class="fa-solid fa-arrow-right arrow"></i>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cardIcon">
+                    <i class="fa-solid fa-clipboard-list  carro"></i>
+                </div>
+                <div class="cardText">
+                    <h1>Tenho Interesse</h1>
+                    <p>Fale com um de nossos<br>concessionários</p>
+                </div>
+                <div class="CardIcon">
+                    <i class="fa-solid fa-arrow-right arrow"></i>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cardIcon">
+                    <i class="fa-solid fa-car-side  carro"></i>
+                </div>
+                <div class="cardText">
+                    <h1>Test Drive</h1>
+                    <p>Agende seu Test Drive</p>
+                </div>
+                <div class="CardIcon">
+                    <i class="fa-solid fa-arrow-right arrow"></i>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cardIcon">
+                    <i class="fa-solid fa-cart-shopping  carro"></i>
+                </div>
+                <div class="cardText">
+                    <h1>Configurar agora</h1>
+                    <p>Configure o seu mercedes-AMG<br>A 35 4MATIC Sedan</p>
+                </div>
+                <div class="CardIcon">
+                    <i class="fa-solid fa-arrow-right arrow"></i>
+                </div>
+            </div>
+            
+            
+               
+            
+        </div>
+
+        <div class="etiqueta">
+            <span >Etiqueta Nacional de Segurança Veicular</span>
+            <button>> Clique aqui para download da ENSV</button>
+        </div>
+    </section>
+    <footer>
+        <div class="cima"> 
+            <a href="#header">
+                <i class="fa-sharp fa-solid fa-arrow-up"></i>
+                Para cima    
+            </a>
+        </div>
+        
+            <div class="textFooter">
+                <div class="servicos">
+                    <ul>
+                        <span class="servicosonline">Serviços Online</span>
+                        <li>Encontre um concessionário</li>
+                        <li>Seminovos Certified</li>
+                        <li>Configurador</li>
+                        <li>Tenho Interesse</li>
+                        <li>Consultar Recall</li>
+                    </ul>
+                </div>
+                <div class="sobreFooter">
+                    <ul>
+                        <span class="sobre">Sobre</span>
+                        <li>Sobre a Mercedes-Benz</li>
+                        <li>Informativo Semicondutores</li>
+                        <li>Contato</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="infoFooter">
+                <ul>
+                    <li>Cookies</li>
+                    <li>Proteção de dados</li>
+                    <li>Notas legais</li>
+                    <li><i class="fa-brands fa-facebook fa-2x"></i></li>
+                    <li><i class="fa-brands fa-instagram fa-2x"></i></li>
+                    <li><i class="fa-brands fa-youtube fa-2x"></i></li>
+                </ul>
+            </div>
+            <span class="notificacao">© 2023. Mercedes-Benz AG. Todos os direitos reservados (Notificações legais)</span>
+            
+            
+
+        
+    </footer>
+
+
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>
