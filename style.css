@@ -608,6 +608,9 @@ footer li:hover{
    .cards .card h1{
     margin-bottom: 0;
    }
+   footer{
+    overflow: hidden;
+  }
   
 
    footer .textFooter ul li{
@@ -651,6 +654,9 @@ footer li:hover{
     background-size: cover;
     margin-top: -50em;
 }
+#section2{
+    overflow: hidden;
+  }
 .section2info{
     margin-top: 7em;
     display: flex;
